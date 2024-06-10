@@ -131,7 +131,7 @@ func FinaliseBlockRegistry() {
 	liquidDisplacingBlocks = make([]bool, len(blocks))
 	chunk.FilteringBlocks = make([]uint8, len(blocks))
 	chunk.LightBlocks = make([]uint8, len(blocks))
-	chunk.WaterBlocks = make([]bool,  len(blocks))
+	chunk.WaterBlocks = make([]bool, len(blocks))
 
 	for rid, b := range blocks {
 		finaliseBlock(uint32(rid), b)

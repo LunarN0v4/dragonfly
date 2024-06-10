@@ -166,6 +166,7 @@ func decodeSubChunk(buf *bytes.Buffer, c *Chunk, index *byte, e Encoding, hashed
 			if err != nil {
 				return nil, err
 			}
+			println("storage:", storage)
 			if hashedRids {
 				for i2, v := range storage.palette.values {
 					var ok bool

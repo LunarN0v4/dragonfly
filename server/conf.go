@@ -6,6 +6,7 @@ import (
 	"path/filepath"
 
 	"slices"
+	_ "unsafe"
 
 	"github.com/df-mc/dragonfly/server/block"
 	"github.com/df-mc/dragonfly/server/entity"
@@ -335,5 +336,6 @@ func DefaultConfig() UserConfig {
 
 // noinspection ALL
 //
+
 //go:linkname world_finaliseBlockRegistry github.com/df-mc/dragonfly/server/world.finaliseBlockRegistry
 func world_finaliseBlockRegistry()
